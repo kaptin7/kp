@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>KAPTIN</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Tahoma, Arial;
+      direction: rtl;
+      overflow: hidden;
+    }
+
+    body {
+      background: url('your-image.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.6);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      color: #fff;
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+
+    .link {
+      margin: 10px;
+      padding: 12px 20px;
+      width: 260px;
+      border-radius: 8px;
+      font-size: 18px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .link i {
+      margin-left: 10px;
+      font-size: 20px;
+    }
+
+    .tiktok { background: #000; }
+    .tiktok:hover { background: #ff0050; }
+
+    .discord { background: #5865F2; }
+    .discord:hover { background: #404EED; }
+
+    .whatsapp { background: #25D366; }
+    .whatsapp:hover { background: #128C7E; }
+
+    .telegram { background: #0088cc; }
+    .telegram:hover { background: #006699; }
+
+    @media (max-width: 480px) {
+      h1 { font-size: 22px; }
+      .link { width: 90%; font-size: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <h1>KAPTIN</h1>
+
+    <a class="link tiktok" href="https://www.tiktok.com/@kaptin7">
+      TikTok <i class="fa-brands fa-tiktok"></i>
+    </a>
+
+    <a class="link discord" href="https://discord.gg/C3kPsNrNsR">
+      Discord <i class="fa-brands fa-discord"></i>
+    </a>
+
+    <a class="link whatsapp" href="https://whatsapp.com/channel/0029VbBRpGABPzjY1K9G583g">
+      WhatsApp Channel <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <a class="link telegram" href="https://t.me/yourchannelid">
+      Telegram Channel <i class="fa-brands fa-telegram"></i>
+    </a>
+  </div>
+</body>
+</html>
