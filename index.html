@@ -3,8 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <title>KAPTIN</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body, html {
       margin: 0;
       padding: 0;
@@ -31,19 +36,20 @@
       align-items: center;
       justify-content: center;
       padding: 20px;
-      box-sizing: border-box;
     }
 
     h1 {
       color: #fff;
-      font-size: 28px;
+      font-size: 32px;
       margin-bottom: 30px;
+      text-align: center;
     }
 
     .link {
       margin: 10px;
-      padding: 12px 20px;
-      width: 260px;
+      padding: 14px 20px;
+      width: 100%;
+      max-width: 320px;
       border-radius: 8px;
       font-size: 18px;
       font-weight: bold;
@@ -72,9 +78,14 @@
     .telegram { background: #0088cc; }
     .telegram:hover { background: #006699; }
 
+    @media (max-width: 768px) {
+      h1 { font-size: 26px; }
+      .link { font-size: 16px; padding: 12px; }
+    }
+
     @media (max-width: 480px) {
       h1 { font-size: 22px; }
-      .link { width: 90%; font-size: 16px; }
+      .link { font-size: 15px; padding: 10px; }
     }
   </style>
 </head>
@@ -82,15 +93,15 @@
   <div class="overlay">
     <h1>KAPTIN</h1>
 
-    <a class="link tiktok" href="https://www.tiktok.com/@kaptin7">
+    <a class="link tiktok" href="https://www.tiktok.com/@username">
       TikTok <i class="fa-brands fa-tiktok"></i>
     </a>
 
-    <a class="link discord" href="https://discord.gg/C3kPsNrNsR">
+    <a class="link discord" href="https://discord.gg/yourinvitecode">
       Discord <i class="fa-brands fa-discord"></i>
     </a>
 
-    <a class="link whatsapp" href="https://whatsapp.com/channel/0029VbBRpGABPzjY1K9G583g">
+    <a class="link whatsapp" href="https://whatsapp.com/channel/yourchannelid">
       WhatsApp Channel <i class="fa-brands fa-whatsapp"></i>
     </a>
 
